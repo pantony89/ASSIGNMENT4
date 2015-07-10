@@ -11,7 +11,7 @@ package com.products;
 */
 public class ProductDetails {
     
-   int product_id;
+   int productId;
    int quantity;
    String name;
    String description;
@@ -21,8 +21,8 @@ public class ProductDetails {
     
     }
     
-    public ProductDetails(int product_id,String name,String description,int quantity){
-        this.product_id=product_id;
+    public ProductDetails(int productId,String name,String description,int quantity){
+        this.productId=productId;
         this.name=name;
         this.description=description;
         this.quantity=quantity;
@@ -54,22 +54,14 @@ public class ProductDetails {
     }
     
 
-    /**
-     * Get the value of product_id
-     *
-     * @return the value of product_id
-     */
-    public int getProduct_id() {
-        return product_id;
+    
+    public int getProductId() {
+        return productId;
     }
 
-    /**
-     * Set the value of product_id
-     *
-     * @param product_id new value of product_id
-     */
-    public void setProduct_id(int product_id) {
-        this.product_id = product_id;
+   
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
 }
