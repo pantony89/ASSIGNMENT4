@@ -13,20 +13,21 @@ import java.sql.SQLException;
  * @author antony
  */
 public class MyConnection {
+    
      public  java.sql.Connection getConnection() {
-        java.sql.Connection conn = null;
+        java.sql.Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
-            System.err.println("JDBC Driver Not Found: " + ex.getMessage());
+            System.err.println( ex.getMessage());
         }
 
         try {
             String jdbc = "jdbc:mysql://ipro.lambton.on.ca/inventory";
-            conn = DriverManager.getConnection(jdbc, "products", "products");
+            con = DriverManager.getConnection(jdbc, "products", "products");
         } catch (SQLException ex) {
-            System.err.println("Failed to Connect: " + ex.getMessage());
+            System.err.println( ex.getMessage());
         }
-        return conn;
+        return con;
     }
 }

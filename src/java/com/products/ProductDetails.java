@@ -5,16 +5,17 @@
  */
 package com.products;
 
-/**
- *
- * @author antony 
+
+ /* @author antony 
+
+*/
 public class ProductDetails {
     
-    private int product_id;
-
-    private String name;
-    private String description;
-    private int quantity;
+   int product_id;
+   int quantity;
+   String name;
+   String description;
+    
     
     public ProductDetails(){
     
